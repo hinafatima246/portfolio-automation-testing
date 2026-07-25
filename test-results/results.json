@@ -1,0 +1,1157 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "specs/hina-fatima-portfolio",
+      "--headed"
+    ],
+    "configFile": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\playwright.config.ts",
+    "rootDir": "C:/Users/Mohammad Babar/Documents/playwrightAIagents/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Mohammad Babar/Documents/playwrightAIagents/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Mohammad Babar/Documents/playwrightAIagents/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Mohammad Babar/Documents/playwrightAIagents/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Mohammad Babar/Documents/playwrightAIagents/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Mohammad Babar/Documents/playwrightAIagents/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Mohammad Babar/Documents/playwrightAIagents/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "hina-fatima-portfolio\\contact-form-invalid-input.spec.ts",
+      "file": "hina-fatima-portfolio/contact-form-invalid-input.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Invalid input handling shows clear feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5198,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:31.445Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-a51ff-ndling-shows-clear-feedback-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1a2933591b7f357b89b3-af61fea25e087c1d996c",
+          "file": "hina-fatima-portfolio/contact-form-invalid-input.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Invalid input handling shows clear feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 8177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:38.990Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-a51ff-ndling-shows-clear-feedback-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1a2933591b7f357b89b3-4286177cdd2d9995fc4f",
+          "file": "hina-fatima-portfolio/contact-form-invalid-input.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Invalid input handling shows clear feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:58.009Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-a51ff-ndling-shows-clear-feedback-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1a2933591b7f357b89b3-9276a2fdf0f29852a0c1",
+          "file": "hina-fatima-portfolio/contact-form-invalid-input.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hina-fatima-portfolio\\contact-form-success.spec.ts",
+      "file": "hina-fatima-portfolio/contact-form-success.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Valid contact form submission succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4918,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:31.463Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-58e2c-ct-form-submission-succeeds-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c095f92b0980de9b5558-e4dd66aa82bc5a3cda1a",
+          "file": "hina-fatima-portfolio/contact-form-success.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Valid contact form submission succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 12875,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:39.120Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-58e2c-ct-form-submission-succeeds-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c095f92b0980de9b5558-7b46f90f812eb71a5dbb",
+          "file": "hina-fatima-portfolio/contact-form-success.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Valid contact form submission succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 6079,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:58.280Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-58e2c-ct-form-submission-succeeds-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c095f92b0980de9b5558-e1d2b9bdb51ab90e7a21",
+          "file": "hina-fatima-portfolio/contact-form-success.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hina-fatima-portfolio\\contact-form-validation.spec.ts",
+      "file": "hina-fatima-portfolio/contact-form-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Contact form blocks submission when required fields are empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 4352,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:31.476Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-91ca1-n-required-fields-are-empty-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79f81673b79929736c53-e497edf5cfef78cda05e",
+          "file": "hina-fatima-portfolio/contact-form-validation.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Contact form blocks submission when required fields are empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:38.795Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-91ca1-n-required-fields-are-empty-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79f81673b79929736c53-156c2934f0c115712ff6",
+          "file": "hina-fatima-portfolio/contact-form-validation.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Contact form blocks submission when required fields are empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 6062,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:58.468Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cont-91ca1-n-required-fields-are-empty-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "79f81673b79929736c53-c4a9eb33a6eeb22ed751",
+          "file": "hina-fatima-portfolio/contact-form-validation.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hina-fatima-portfolio\\cta-interaction.spec.ts",
+      "file": "hina-fatima-portfolio/cta-interaction.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Primary call-to-action buttons are interactive",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 4900,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:31.459Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cta--70195-ion-buttons-are-interactive-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa812642fe63da23e6d-348ce4de9f45f1898b5c",
+          "file": "hina-fatima-portfolio/cta-interaction.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Primary call-to-action buttons are interactive",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15613,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:38.832Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cta--70195-ion-buttons-are-interactive-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa812642fe63da23e6d-2392d9d90ab6f8f7278d",
+          "file": "hina-fatima-portfolio/cta-interaction.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Primary call-to-action buttons are interactive",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5200,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:59.799Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-cta--70195-ion-buttons-are-interactive-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa812642fe63da23e6d-7fce5588761475682fca",
+          "file": "hina-fatima-portfolio/cta-interaction.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hina-fatima-portfolio\\navbar-navigation.spec.ts",
+      "file": "hina-fatima-portfolio/navbar-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Navbar or menu navigation works across sections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 3859,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:31.460Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-navb-7e2d5-ation-works-across-sections-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d5d425fcccef1147d36-34457b0cab7b71310a4d",
+          "file": "hina-fatima-portfolio/navbar-navigation.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Navbar or menu navigation works across sections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 16082,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:39.873Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-navb-7e2d5-ation-works-across-sections-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d5d425fcccef1147d36-f279cf028ac9a9a0462b",
+          "file": "hina-fatima-portfolio/navbar-navigation.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Navbar or menu navigation works across sections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 4940,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:40:00.401Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-navb-7e2d5-ation-works-across-sections-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d5d425fcccef1147d36-76e4348c5850b4ba3237",
+          "file": "hina-fatima-portfolio/navbar-navigation.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hina-fatima-portfolio\\page-load.spec.ts",
+      "file": "hina-fatima-portfolio/page-load.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Website loads correctly and shows the expected title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 4687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:31.495Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-page-18015-nd-shows-the-expected-title-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19af2a0caf45341b1e58-2f1183534e51f12715e4",
+          "file": "hina-fatima-portfolio/page-load.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Website loads correctly and shows the expected title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 12615,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:39.812Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-page-18015-nd-shows-the-expected-title-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19af2a0caf45341b1e58-999e9d747e09280014a3",
+          "file": "hina-fatima-portfolio/page-load.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Website loads correctly and shows the expected title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 3867,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:40:04.483Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-page-18015-nd-shows-the-expected-title-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19af2a0caf45341b1e58-14c88ff26cbc165fe2a0",
+          "file": "hina-fatima-portfolio/page-load.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hina-fatima-portfolio\\responsive-interactions.spec.ts",
+      "file": "hina-fatima-portfolio/responsive-interactions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Interactive elements remain accessible across viewport changes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 3032,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:35.745Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-resp-0b8d0-ble-across-viewport-changes-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "841342d7915ca01aeefd-8013c8d64dd5a18ca4e4",
+          "file": "hina-fatima-portfolio/responsive-interactions.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Interactive elements remain accessible across viewport changes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 6859,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:52.408Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-resp-0b8d0-ble-across-viewport-changes-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "841342d7915ca01aeefd-1389f3e602e6ecd5fb84",
+          "file": "hina-fatima-portfolio/responsive-interactions.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Interactive elements remain accessible across viewport changes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 5267,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:40:04.765Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-resp-0b8d0-ble-across-viewport-changes-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "841342d7915ca01aeefd-a72ed228b81bd8dce55c",
+          "file": "hina-fatima-portfolio/responsive-interactions.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "hina-fatima-portfolio\\responsive-navigation.spec.ts",
+      "file": "hina-fatima-portfolio/responsive-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Navigation and buttons remain usable at mobile width",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:36.217Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-resp-88934-main-usable-at-mobile-width-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5ce6658b72451f0ea8a2-9df8ce113e0808b859e8",
+          "file": "hina-fatima-portfolio/responsive-navigation.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Navigation and buttons remain usable at mobile width",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 3,
+                  "status": "timedOut",
+                  "duration": 40940,
+                  "error": {
+                    "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m",
+                    "stack": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                    },
+                    {
+                      "message": "Error: browserContext.close: Test ended.\nBrowser logs:\n\n<launching> C:\\Users\\Mohammad Babar\\AppData\\Local\\ms-playwright\\firefox-1538\\firefox\\firefox.exe -no-remote -wait-for-browser -foreground -profile C:\\Users\\MOHAMM~1\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-ceYKor -juggler-pipe -silent\n<launched> pid=20152\n[pid=20152][err] JavaScript warning: resource://services-settings/Utils.sys.mjs, line 119: unreachable code after return statement\n[pid=20152][out] \n[pid=20152][out] Juggler listening to the pipe\n[pid=20152][out] console.error: \"Warning: unrecognized command line flag\" \"-foreground\"\n[pid=20152][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]\n[pid=20152][out] console.error: \"Error fetching remote settings base url from CDN. Falling back to https://firefox-settings-attachments.cdn.mozilla.net/\" (new SyntaxError(\"XMLHttpRequest.open: '/' is not a valid URL.\", (void 0), 126))\n[pid=20152][out] console.error: services.settings: \n[pid=20152][out]   Message: EmptyDatabaseError: \"main/nimbus-desktop-experiments\" has not been synced yet\n[pid=20152][out]   Stack:\n[pid=20152][out]     EmptyDatabaseError@resource://services-settings/Database.sys.mjs:19:5\n[pid=20152][out] list@resource://services-settings/Database.sys.mjs:96:13\n[pid=20152][out] \n[pid=20152][out] console.warn: services.settings: #fetchAttachment: Forcing fallbackToDump to false due to Utils.LOAD_DUMPS being false\n[pid=20152][out] console.error: (new NotFoundError(\"Could not find fa0fc42c-d91d-fca7-34eb-806ff46062dc in cache or dump\", \"resource://services-settings/Attachments.sys.mjs\", 48))\n[pid=20152][out] console.warn: \"Unable to find the attachment for\" \"fa0fc42c-d91d-fca7-34eb-806ff46062dc\"\n[pid=20152][err] JavaScript warning: https://demo-portfolio-seven-gamma.vercel.app/, line 716: Script terminated by timeout at:\n[pid=20152][err] @https://demo-portfolio-seven-gamma.vercel.app/:716:1\n[pid=20152][err] EventListener.handleEvent*@https://demo-portfolio-seven-gamma.vercel.app/:710:8\n[pid=20152][err] \n[pid=20152][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]\n[pid=20152] <gracefully close start>\n[pid=20152] <kill>\n[pid=20152] <will force kill>\n[pid=20152] taskkill stdout: SUCCESS: The process with PID 22136 (child process of PID 26312) has been terminated.\r\nSUCCESS: The process with PID 21976 (child process of PID 26312) has been terminated.\r\nSUCCESS: The process with PID 5524 (child process of PID 26312) has been terminated.\r\nSUCCESS: The process with PID 16520 (child process of PID 26312) has been terminated.\r\nSUCCESS: The process with PID 5872 (child process of PID 26312) has been terminated.\r\nSUCCESS: The process with PID 28656 (child process of PID 26312) has been terminated.\r\nSUCCESS: The process with PID 26312 (child process of PID 20152) has been terminated.\r\nSUCCESS: The process with PID 20152 (child process of PID 25324) has been terminated.\r\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:39:52.845Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-resp-88934-main-usable-at-mobile-width-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-resp-88934-main-usable-at-mobile-width-firefox\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5ce6658b72451f0ea8a2-7038e93e2eebf5f18aa4",
+          "file": "hina-fatima-portfolio/responsive-navigation.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Navigation and buttons remain usable at mobile width",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3555,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-25T11:40:05.095Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Mohammad Babar\\Documents\\playwrightAIagents\\test-results\\hina-fatima-portfolio-resp-88934-main-usable-at-mobile-width-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5ce6658b72451f0ea8a2-cf2cd03e54e7dcb30e18",
+          "file": "hina-fatima-portfolio/responsive-navigation.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-25T11:39:30.842Z",
+    "duration": 98577.244,
+    "expected": 23,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
