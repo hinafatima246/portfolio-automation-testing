@@ -1,10 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { PortfolioPage } from '../../pages/PortfolioPage';
 
 test('Navigation and buttons remain usable at mobile width', async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('https://demo-portfolio-seven-gamma.vercel.app/', { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('networkidle');
-
-  const buttons = page.locator('button, a');
-  await expect(buttons.first()).toBeVisible();
+  const portfolioPage = new PortfolioPage(page);
+  
+  await portfolioPage.resizeViewport(390, 844);
+  await portfolioPage.navigateToPortfolio();
+  await portfolioPage.verifyResponsiveLayout();
+  
+  await portfolioPage.takeScreenshot('mobile-view');
 });

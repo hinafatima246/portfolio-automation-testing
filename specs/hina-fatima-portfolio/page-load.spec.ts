@@ -1,9 +1,13 @@
 import { test, expect } from '@playwright/test';
+import { PortfolioPage } from '../../pages/PortfolioPage';
 
 test('Website loads correctly and shows the expected title', async ({ page }) => {
-  await page.goto('https://demo-portfolio-seven-gamma.vercel.app/', { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('networkidle');
-
-  await expect(page).toHaveURL(/demo-portfolio-seven-gamma\.vercel\.app/);
-  await expect(page.locator('body')).toBeVisible();
+  const portfolioPage = new PortfolioPage(page);
+  
+  await portfolioPage.navigateToPortfolio();
+  await portfolioPage.verifyPageLoaded();
+  await portfolioPage.verifyUrlCorrect();
+  await portfolioPage.verifyPageTitle();
+  
+  await portfolioPage.takeScreenshot('homepage-loaded');
 });

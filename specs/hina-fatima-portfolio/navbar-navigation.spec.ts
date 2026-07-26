@@ -1,9 +1,14 @@
 import { test, expect } from '@playwright/test';
+import { PortfolioPage } from '../../pages/PortfolioPage';
 
 test('Navbar or menu navigation works across sections', async ({ page }) => {
-  await page.goto('https://demo-portfolio-seven-gamma.vercel.app/', { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('networkidle');
-
-  const nav = page.locator('nav, header').first();
-  await expect(nav).toBeVisible();
+  const portfolioPage = new PortfolioPage(page);
+  
+  await portfolioPage.navigateToPortfolio();
+  await portfolioPage.verifyNavbarVisible();
+  
+  const linkCount = await portfolioPage.getNavbarLinks();
+  expect(linkCount).toBeGreaterThan(0);
+  
+  await portfolioPage.takeScreenshot('navbar-visible');
 });

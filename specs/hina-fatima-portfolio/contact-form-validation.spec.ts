@@ -1,11 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { PortfolioPage } from '../../pages/PortfolioPage';
+import { ContactFormPage } from '../../pages/ContactFormPage';
 
 test('Contact form blocks submission when required fields are empty', async ({ page }) => {
-  await page.goto('https://demo-portfolio-seven-gamma.vercel.app/', { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('networkidle');
-
-  const form = page.locator('form').first();
-  if (await form.count()) {
-    await expect(form).toBeVisible();
-  }
+  const portfolioPage = new PortfolioPage(page);
+  const contactFormPage = new ContactFormPage(page);
+  
+  await portfolioPage.navigateToPortfolio();
+  await contactFormPage.verifyFormExists();
+  await contactFormPage.takeScreenshot('empty-form');
 });

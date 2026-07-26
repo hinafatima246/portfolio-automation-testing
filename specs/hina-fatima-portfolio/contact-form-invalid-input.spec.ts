@@ -1,11 +1,14 @@
 import { test, expect } from '@playwright/test';
+import { PortfolioPage } from '../../pages/PortfolioPage';
+import { ContactFormPage } from '../../pages/ContactFormPage';
 
 test('Invalid input handling shows clear feedback', async ({ page }) => {
-  await page.goto('https://demo-portfolio-seven-gamma.vercel.app/', { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('networkidle');
-
-  const email = page.locator('input[type="email"], input[name*="email"], textarea').first();
-  if (await email.count()) {
-    await email.fill('not-an-email');
-  }
+  const portfolioPage = new PortfolioPage(page);
+  const contactFormPage = new ContactFormPage(page);
+  
+  await portfolioPage.navigateToPortfolio();
+  await contactFormPage.verifyFormExists();
+  await contactFormPage.fillInvalidEmail('not-an-email');
+  
+  await contactFormPage.takeScreenshot('invalid-email-entered');
 });
