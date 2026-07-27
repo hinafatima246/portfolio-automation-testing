@@ -1,0 +1,36 @@
+$kind: http-request
+name: GET Single Project
+description: ""
+url: https://jsonplaceholder.typicode.com/posts/1
+method: GET
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 200\",()=>{\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      \r
+
+      pm.test(\"Required fields exist\",()=>{\r
+
+      \r
+
+      let data = pm.response.json();\r
+
+      \r
+
+      pm.expect(data).to.have.property(\"id\");\r
+
+      pm.expect(data).to.have.property(\"title\");\r
+
+      pm.expect(data).to.have.property(\"body\");\r
+
+      \r
+
+      });"
+    language: text/javascript
+order: 3853938381442900

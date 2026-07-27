@@ -1,0 +1,71 @@
+$kind: http-request
+name: PUT Update Project
+url: https://jsonplaceholder.typicode.com/posts/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \"title\":\"Updated Portfolio Project\",\r
+
+    \"body\":\"Updated using PUT request\",\r
+
+    \"userId\":1\r
+
+    }"
+scripts:
+  - type: beforeRequest
+    code: "pm.test(\"Status code is 200\",()=>{\r
+
+      pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      \r
+
+      pm.test(\"Title updated\",()=>{\r
+
+      \r
+
+      let data=pm.response.json();\r
+
+      \r
+
+      pm.expect(data.title)\r
+
+      .to.eql(\"Updated Portfolio Project\");\r
+
+      \r
+
+      });"
+    language: text/javascript
+  - type: afterResponse
+    code: "pm.test(\"Status code is 200\",()=>{\r
+
+      pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      \r
+
+      pm.test(\"Title updated\",()=>{\r
+
+      \r
+
+      let data=pm.response.json();\r
+
+      \r
+
+      pm.expect(data.title)\r
+
+      .to.eql(\"Updated Portfolio Project\");\r
+
+      \r
+
+      });"
+    language: text/javascript
+order: 4323503401198819

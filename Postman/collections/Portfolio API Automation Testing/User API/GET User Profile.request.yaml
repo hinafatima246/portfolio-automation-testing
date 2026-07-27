@@ -1,0 +1,56 @@
+$kind: http-request
+name: GET User Profile
+url: https://jsonplaceholder.typicode.com/users/1
+method: GET
+scripts:
+  - type: beforeRequest
+    code: "pm.test(\"Status code is 200\",()=>{\r
+
+      pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      \r
+
+      pm.test(\"User name exists\",()=>{\r
+
+      \r
+
+      let data=pm.response.json();\r
+
+      \r
+
+      pm.expect(data.name).to.exist;\r
+
+      \r
+
+      });"
+    language: text/javascript
+  - type: afterResponse
+    code: "pm.test(\"Status code is 200\",()=>{\r
+
+      pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      \r
+
+      pm.test(\"User name exists\",()=>{\r
+
+      \r
+
+      let data=pm.response.json();\r
+
+      \r
+
+      pm.expect(data.name).to.exist;\r
+
+      \r
+
+      });"
+    language: text/javascript
+order: 1785106353008

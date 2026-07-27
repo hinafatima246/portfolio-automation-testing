@@ -1,0 +1,43 @@
+$kind: http-request
+name: POST Invalid Contact
+url: https://jsonplaceholder.typicode.com/comments
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \"name\":\"\",\r
+
+    \"email\":\"\",\r
+
+    \"body\":\"\"\r
+
+    }"
+scripts:
+  - type: beforeRequest
+    code: "pm.test(\"Negative test handled\",()=>{\r
+
+      \r
+
+      pm.expect(pm.response.code)\r
+
+      .to.be.oneOf([201,400]);\r
+
+      \r
+
+      });"
+    language: text/javascript
+  - type: afterResponse
+    code: "pm.test(\"Negative test handled\",()=>{\r
+
+      \r
+
+      pm.expect(pm.response.code)\r
+
+      .to.be.oneOf([201,400]);\r
+
+      \r
+
+      });"
+    language: text/javascript
+order: 2702878018761587

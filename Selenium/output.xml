@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.6 on win32)" generated="2026-07-27T01:13:32.110017" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\Mohammad Babar\Documents\SeleniumPractice\login_test.robot">
+<test id="s1-t1" name="Successful Login Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-27T01:13:32.383426" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-27T01:13:32.383114" elapsed="2.243065"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-27T01:13:34.627133" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-27T01:13:34.626595" elapsed="0.088487"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-27T01:13:34.715735" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-07-27T01:13:34.738121" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-27T01:13:34.715452" elapsed="0.055982"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-07-27T01:13:34.771977" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-27T01:13:34.771757" elapsed="0.106859"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-07-27T01:13:34.891356" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-07-27T01:13:34.878958" elapsed="0.012497"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-27T01:13:34.891762" elapsed="2.174894"/>
+</kw>
+<status status="PASS" start="2026-07-27T01:13:32.382099" elapsed="4.693908"/>
+</test>
+<status status="PASS" start="2026-07-27T01:13:32.111675" elapsed="4.967134"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="1" fail="0" skip="0">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

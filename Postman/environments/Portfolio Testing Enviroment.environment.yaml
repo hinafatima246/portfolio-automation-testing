@@ -1,0 +1,8 @@
+name: Portfolio Testing Enviroment
+values:
+  - key: base_url
+    value: ''
+  - key: project_id
+    value: ''
+  - key: user_id
+    value: ''

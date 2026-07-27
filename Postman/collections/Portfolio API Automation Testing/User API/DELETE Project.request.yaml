@@ -1,0 +1,19 @@
+$kind: http-request
+name: DELETE Project
+url: https://jsonplaceholder.typicode.com/posts/1
+method: DELETE
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Delete successful\",()=>{\r
+
+      \r
+
+      pm.expect(pm.response.code)\r
+
+      .to.be.oneOf([200,204]);\r
+
+      \r
+
+      });"
+    language: text/javascript
+order: 2071485174261441

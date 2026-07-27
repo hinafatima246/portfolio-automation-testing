@@ -1,0 +1,67 @@
+$kind: http-request
+name: POST Contact Form
+url: https://jsonplaceholder.typicode.com/comments
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \"name\":\"Hina Portfolio Visitor\",\r
+
+    \"email\":\"visitor@gmail.com\",\r
+
+    \"body\":\"Interested in contacting Hina\"\r
+
+    }"
+scripts:
+  - type: beforeRequest
+    code: "pm.test(\"Status code is 201\",()=>{\r
+
+      pm.response.to.have.status(201);\r
+
+      });\r
+
+      \r
+
+      \r
+
+      pm.test(\"Email field exists\",()=>{\r
+
+      \r
+
+      let data=pm.response.json();\r
+
+      \r
+
+      pm.expect(data.email).to.exist;\r
+
+      \r
+
+      });"
+    language: text/javascript
+  - type: afterResponse
+    code: "pm.test(\"Status code is 201\",()=>{\r
+
+      pm.response.to.have.status(201);\r
+
+      });\r
+
+      \r
+
+      \r
+
+      pm.test(\"Email field exists\",()=>{\r
+
+      \r
+
+      let data=pm.response.json();\r
+
+      \r
+
+      pm.expect(data.email).to.exist;\r
+
+      \r
+
+      });"
+    language: text/javascript
+order: 1785104853531
